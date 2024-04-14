@@ -27,5 +27,29 @@ v1routes.get('/stores', (req: Request, res: Response) => {
       id: 2,
       name: 'Store 2',
     },
+    {
+      id: 1,
+      name: 'Store 1',
+    },
+    {
+      id: 2,
+      name: 'Store 2',
+    },
+    {
+      id: 1,
+      name: 'Store 1',
+    },
+    {
+      id: 2,
+      name: 'Store 2',
+    },
+    {
+      id: 1,
+      name: 'Store 1',
+    },
+    {
+      id: 2,
+      name: 'Store 2',
+    },
   ]);
 });

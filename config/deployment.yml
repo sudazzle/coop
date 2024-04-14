@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coop-api-gateway
+  labels:
+    app: coop-api-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: coop-api-gateway
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  minReadySeconds: 5
+  template:
+    metadata:
+      labels:
+        app: coop-api-gateway
+    spec:
+      containers:
+      - name: coop-api-gateway
+        image: <IMAGE>
+        ports:
+        - containerPort: 80
+        env:
+        - name: PORT
+          value: "80"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: coop-api-gateway-service
+spec:
+  type: LoadBalancer
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+  selector:
+    app: coop-api-gateway
