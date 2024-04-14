@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'api-gateway/**'
-
-env:
-  API_GATEWAY: "api-gateway"
 
 jobs:
   build-api-gateway:
