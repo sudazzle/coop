@@ -27,13 +27,6 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: Release Please
-        id: release
-        uses: google-github-actions/release-please-action@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          release-type: node
-
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
         with:
