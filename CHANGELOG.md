@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.5...v1.0.6) (2024-04-14)
+
+
+### Bug Fixes
+
+* docker build should not cache ([cb172aa](https://github.com/sudazzle/coop-api-gateway/commit/cb172aa6d7bfab338c2ad3b15a65100228850e52))
+
 ## [1.0.5](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.4...v1.0.5) (2024-04-14)
 
 
