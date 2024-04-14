@@ -1,15 +1,14 @@
 name: Build, Tag and Deploy API Gateway
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true && contains(github.event.pull_request.title, 'chore(main):') && contains(github.event.pull_request.title, 'release')
+    if: "contains(github.event.head_commit.message, 'chore(main): release')"
     timeout-minutes: 10
 
     steps:
@@ -33,7 +32,7 @@ jobs:
           token: ${{ secrets.DIGITAL_OCEAN_CONTAINER }}
 
       - name: Build Docker Image
-        run: docker build -t coop-api-gateway .
+        run: docker build --no-cache  -t coop-api-gateway .
       
       - name: Tag Docker Image
         run: docker tag coop-api-gateway registry.digitalocean.com/sudaman/coop-api-gateway:latest
