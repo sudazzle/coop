@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.4...v1.0.5) (2024-04-14)
+
+
+### Bug Fixes
+
+* deploy should always full pull the latest image and restart pods ([68287d8](https://github.com/sudazzle/coop-api-gateway/commit/68287d826c3ff6bd7aaa5e000b0e911712c4ac45))
+
 ## [1.0.4](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.3...v1.0.4) (2024-04-14)
 
 
