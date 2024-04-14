@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.3...v1.0.4) (2024-04-14)
+
+
+### Bug Fixes
+
+* consistent file extention ([21e4a20](https://github.com/sudazzle/coop-api-gateway/commit/21e4a207551dfff15ab86bb778bf0a30c37e12bc))
+
 ## [1.0.3](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.2...v1.0.3) (2024-04-14)
 
 
