@@ -30,9 +30,6 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Build Docker Image
-        run: sudo docker build -t coop-api-gateway:latest .
         
       - name: Release Please
         id: release
@@ -40,4 +37,24 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
+
+      - name: Install doctl
+        # if: steps.release.outputs.release_created == 'true'
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITAL_OCEAN_CONTAINER }}
+
+      - name: Build Docker Image
+        # if: steps.release.outputs.release_created == 'true'
+        run: docker build -t coop-api-gateway .
+      
+      - name: Tag Docker Image
+        run: docker tag coop-api-gateway registry.digitalocean.com/sudaman/coop-api-gateway:latest
+      
+      - name: Login in to DO Container Registry
+        run : doctl registry login --expiry-seconds 600
+
+      - name: Push Docker Image
+        # if: steps.release.outputs.release_created == 'true'
+        run: docker push registry.digitalocean.com/sudaman/coop-api-gateway:latest
   
