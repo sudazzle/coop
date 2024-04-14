@@ -17,6 +17,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.json$/,
+        type: 'asset/source'
+      },
+      {
         test: /\.ts?$/,
         loader: 'ts-loader',
         options: {
