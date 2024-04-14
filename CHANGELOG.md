@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.3](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.2...v1.0.3) (2024-04-14)
+
+
+### Bug Fixes
+
+* added proxy to coop api to get stores with fallback data ([7722a7f](https://github.com/sudazzle/coop-api-gateway/commit/7722a7fa5e7c0af765d585ee7b16aa4382cc1871))
+* change access token ([dc24d63](https://github.com/sudazzle/coop-api-gateway/commit/dc24d632a4ff4b953988ef9b0040d83b038cd0d8))
+* deploy config path ([80d20c4](https://github.com/sudazzle/coop-api-gateway/commit/80d20c44ae7530bafd78d12e90966fbcf2b1e0a8))
+
+
+### Miscellaneous Chores
+
+* **main:** release 1.0.3 ([e5cbb15](https://github.com/sudazzle/coop-api-gateway/commit/e5cbb1584155a24ed6a73a37b66a326f36ca1df6))
+
 ## [1.0.2](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.1...v1.0.2) (2024-04-14)
 
 
