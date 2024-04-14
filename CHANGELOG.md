@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.1...v1.0.2) (2024-04-14)
+
+
+### Bug Fixes
+
+* fix pull request loop ([8c4aead](https://github.com/sudazzle/coop-api-gateway/commit/8c4aead9b6b260eca5036a9533e7192319c27a3a))
+* remove redundent release-please ([4312e8e](https://github.com/sudazzle/coop-api-gateway/commit/4312e8eca95af77ee17dbb49c4098cc99e1452a0))
+
 ## [1.0.1](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.0...v1.0.1) (2024-04-14)
 
 
