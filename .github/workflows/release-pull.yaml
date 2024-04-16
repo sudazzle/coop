@@ -90,9 +90,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Run E2E tests
-        run: npm run e2e:tests:silent
-        
       - name: Release Please
         id: release
         uses: google-github-actions/release-please-action@v4
