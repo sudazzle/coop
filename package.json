@@ -7,7 +7,10 @@
     "docker:db:up": "docker-compose -f ./local-dev/docker-compose.yaml up -d",
     "docker:db:down": "docker-compose -f ./local-dev/docker-compose.yaml down",
     "e2e:tests:with-debug": "hurl --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt",
-    "e2e:tests:silent": "hurl --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt"
+    "e2e:tests:silent": "hurl --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt",
+    "format:check": "biome check .",
+    "format:fix": "biome check --apply .",
+    "format:fix:unsafe": "biome check --apply-unsafe ."
   },
   "author": "shrestha.sudaman@gmail.com",
   "dependencies": {
@@ -22,6 +25,7 @@
     "typeorm": "^0.3.20"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.7.0",
     "@orangeopensource/hurl": "^4.2.0",
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.7",

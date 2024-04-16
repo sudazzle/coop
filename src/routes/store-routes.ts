@@ -1,6 +1,12 @@
+import { get } from 'node:http';
+import {
+  createStore,
+  deleteStore,
+  getAllStores,
+  getStoreById,
+  patchStore,
+} from '@/controller/store-controller';
 import { Router } from 'express';
-import { getAllStores, getStoreById, createStore, patchStore, deleteStore } from '@/controller/store-controller';
-import { get } from 'http';
 
 export const storeRoutes = Router();
 

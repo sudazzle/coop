@@ -1,6 +1,16 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
-import { IsNotEmpty, IsUUID, IsEmail, IsJSON, IsString, IsBoolean, IsUrl, IsArray, IsNumber, IsOptional } from 'class-validator';
-
+import {
+  IsArray,
+  IsBoolean,
+  IsEmail,
+  IsJSON,
+  IsNotEmpty,
+  IsNumber,
+  IsOptional,
+  IsString,
+  IsUUID,
+  IsUrl,
+} from 'class-validator';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Store {
@@ -87,11 +97,11 @@ export class Store {
   @IsArray()
   @IsJSON()
   openingHours?: {
-    date: string
-    day: string
-    openString: string
-    closed: string
-    specialOpeningHours: boolean
+    date: string;
+    day: string;
+    openString: string;
+    closed: string;
+    specialOpeningHours: boolean;
   }[];
 
   @Column({ name: 'additional_information', nullable: true, type: 'text' })

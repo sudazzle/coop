@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('node:path');
 const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
@@ -18,7 +18,7 @@ module.exports = {
     rules: [
       {
         test: /\.json$/,
-        type: 'asset/source'
+        type: 'asset/source',
       },
       {
         test: /\.ts?$/,
@@ -38,11 +38,11 @@ module.exports = {
   },
   output: {
     filename: outputFileName,
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
     isDevMode ? new RunScriptWebpackPlugin({ name: outputFileName }) : undefined,
-  ]
+  ],
 };

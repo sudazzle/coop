@@ -5,4 +5,3 @@ import { storeRoutes } from './store-routes';
 export const v1routes = Router();
 v1routes.use(mockedStoreRouter);
 v1routes.use(storeRoutes);
-

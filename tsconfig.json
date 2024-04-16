@@ -17,5 +17,5 @@
     "noImplicitAny": true,
     "types": ["webpack-env"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts"]
 }

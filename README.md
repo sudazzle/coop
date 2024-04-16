@@ -21,6 +21,14 @@ npm run dev
 
 Server will be listening on [http://localhost:6000](http://localhost:6000) unless you change with env variable.
 
+### Formatting
+It uses [Biome](https://biomejs.dev/) for linting and formatting
+```bash
+npm run format:check // only checks for issues
+npm run format:fix // only formats safely
+npm run format:fix:unsafe // also tries to make changes to suggested improvements
+```
+
 ### Build
 ```bash
 npm run build

@@ -1,5 +1,5 @@
-import { Router } from 'express';
 import { getMockedStoreData } from '@/controller/mocked-store-controller';
+import { Router } from 'express';
 
 export const mockedStoreRouter = Router();
 

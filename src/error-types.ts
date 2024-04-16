@@ -1,8 +1,8 @@
-import { ValidationError } from 'class-validator';
+import type { ValidationError } from 'class-validator';
 
 export class BadRequestError extends Error {
-  validationErrors: ValidationError[]
-  
+  validationErrors: ValidationError[];
+
   constructor(validationErrors: ValidationError[]) {
     super();
     this.validationErrors = validationErrors;

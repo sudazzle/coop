@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
 import axios from 'axios';
+import type { Request, Response } from 'express';
 import jsonData from './mock.json';
 
 export const getMockedStoreData = async (req: Request, res: Response) => {
@@ -9,4 +9,4 @@ export const getMockedStoreData = async (req: Request, res: Response) => {
   } catch (error) {
     res.send(jsonData);
   }
-}
+};

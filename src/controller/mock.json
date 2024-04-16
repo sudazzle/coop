@@ -14,12 +14,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=2448",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping",
-        "post",
-        "electric"
-      ],
+      "InStoreServices": ["memberoffer", "tipping", "post", "electric"],
       "Lat": 59.1227622,
       "Lng": 11.3926549,
       "OpeningHoursToday": "Stengt",
@@ -103,12 +98,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=4656",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping",
-        "post",
-        "postnord"
-      ],
+      "InStoreServices": ["memberoffer", "tipping", "post", "postnord"],
       "Lat": 59.1376001,
       "Lng": 11.3768146,
       "OpeningHoursToday": "Stengt",
@@ -192,10 +182,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=1083",
       "ChainImage": "/assets/images/mapmarkers/01.png?7003341bcfe337a104c5a8ee79251d4d",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping"
-      ],
+      "InStoreServices": ["memberoffer", "tipping"],
       "Lat": 59.1317,
       "Lng": 11.3602,
       "OpeningHoursToday": "Stengt",
@@ -279,12 +266,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=1075",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping",
-        "post",
-        "postnord"
-      ],
+      "InStoreServices": ["memberoffer", "tipping", "post", "postnord"],
       "Lat": 59.1404381,
       "Lng": 11.4028393,
       "OpeningHoursToday": "Stengt",
@@ -368,13 +350,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=1081",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping",
-        "post",
-        "postnord",
-        "electric"
-      ],
+      "InStoreServices": ["memberoffer", "tipping", "post", "postnord", "electric"],
       "Lat": 59.2684392,
       "Lng": 11.1671037,
       "OpeningHoursToday": "Stengt",
@@ -458,10 +434,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=1061",
       "ChainImage": "/assets/images/mapmarkers/01.png?7003341bcfe337a104c5a8ee79251d4d",
-      "InStoreServices": [
-        "tipping",
-        "postnord"
-      ],
+      "InStoreServices": ["tipping", "postnord"],
       "Lat": 59.1848031,
       "Lng": 11.0489139,
       "OpeningHoursToday": "Stengt",
@@ -545,12 +518,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=1072",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping",
-        "post",
-        "postnord"
-      ],
+      "InStoreServices": ["memberoffer", "tipping", "post", "postnord"],
       "Lat": 59.2915913,
       "Lng": 11.1502107,
       "OpeningHoursToday": "Stengt",
@@ -634,11 +602,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=4658",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "post",
-        "postnord"
-      ],
+      "InStoreServices": ["memberoffer", "post", "postnord"],
       "Lat": 59.2823698,
       "Lng": 11.1155675,
       "OpeningHoursToday": "Stengt",
@@ -722,12 +686,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=4935",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping",
-        "post",
-        "postnord"
-      ],
+      "InStoreServices": ["memberoffer", "tipping", "post", "postnord"],
       "Lat": 59.2745907,
       "Lng": 11.0887531,
       "OpeningHoursToday": "Stengt",
@@ -811,10 +770,7 @@
       "IsEcommerce": false,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=2436",
       "ChainImage": "/assets/images/mapmarkers/07.png?938d3bb66e14f3c8dd9fc5b45feb4fce",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping"
-      ],
+      "InStoreServices": ["memberoffer", "tipping"],
       "Lat": 59.2927205,
       "Lng": 11.1121531,
       "OpeningHoursToday": "Stengt",
@@ -900,9 +856,7 @@
       "IsEcommerce": true,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=5064",
       "ChainImage": "/assets/images/mapmarkers/43.png?6a21519b1fc209e7ec9de07da05adb3a",
-      "InStoreServices": [
-        "memberoffer"
-      ],
+      "InStoreServices": ["memberoffer"],
       "Lat": 59.28729,
       "Lng": 11.0834,
       "OpeningHoursToday": "Stengt",
@@ -986,12 +940,7 @@
       "IsEcommerce": true,
       "NewspaperUrl": "http://kundeavis.coop.no/aviser/?id=2224",
       "ChainImage": "/assets/images/mapmarkers/02.png?eaf870c29effdcc6b4556bf232dc9525",
-      "InStoreServices": [
-        "memberoffer",
-        "tipping",
-        "postnord",
-        "toto"
-      ],
+      "InStoreServices": ["memberoffer", "tipping", "postnord", "toto"],
       "Lat": 59.5788,
       "Lng": 11.2774,
       "OpeningHoursToday": "Stengt",
