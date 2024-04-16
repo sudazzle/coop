@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.9](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.8...v1.0.9) (2024-04-16)
+
+
+### Bug Fixes
+
+* add biome for formatting and linting, add ssl for db connection for prod ([c0dd856](https://github.com/sudazzle/coop-api-gateway/commit/c0dd85625b450e713ba4b076cb0f486150cf6013))
+
 ## [1.0.8](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.7...v1.0.8) (2024-04-16)
 
 
