@@ -8,6 +8,8 @@ const POSTGRES_PASSWORD = process.env.POSTGRES_PASSWORD || 'password';
 const POSTGRES_DB = process.env.POSTGRES_DB || 'postgres';
 const POSTGRES_SSL = process.env.POSTGRES_SSL || false;
 
+const ssl = Boolean(POSTGRES_SSL) === true ? { rejectUnauthorized: false } : false;
+
 export const appDataSource = new DataSource({
   type: 'postgres',
   host: POSTGRES_HOST,
@@ -16,7 +18,7 @@ export const appDataSource = new DataSource({
   password: POSTGRES_PASSWORD,
   database: POSTGRES_DB,
   synchronize: true,
-  ssl: Boolean(POSTGRES_SSL),
+  ssl,
   logging: true,
   entities: [Store],
   migrations: [],

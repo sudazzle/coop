@@ -32,10 +32,12 @@ spec:
           value: db-postgresql-nyc3-12163-do-user-6446488-0.c.db.ondigitalocean.com
         - name: POSTGRES_PORT
           value: "25060"
-        - name: POSTGRES_USER
+        - name: POSTGRES_DB
           value: postgresql
         - name: POSTGRES_SSL
-          value: true
+          value: "true"
+        - name: POSTGRES_USER
+          value: postgresql
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:
