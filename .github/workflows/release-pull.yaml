@@ -53,37 +53,49 @@ jobs:
         continue-on-error: true
         timeout-minutes: 1
 
-      - name: Check server logs
-        run: cat path/to/your/server/log.log
+      - name: Run E2E tests
+        id: tests
+        if: steps.wait.outcome == 'success'
+        run: npm run e2e:tests:silent
+
+      - name: Fail job if server doesn't start
+        if: steps.wait.outcome == 'failure'
+        run: |
+          echo "Server not running"
+          exit 1
+
+      - name: Fail job if tests fail
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "Test failed"
+          exit 1
+
+  release-pr-creation:
+    needs: tests
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'chore(main): release')"
+    timeout-minutes: 10
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
 
       - name: Run E2E tests
         run: npm run e2e:tests:silent
-
-  # release-pr-creation:
-  #   runs-on: ubuntu-latest
-  #   if: "!contains(github.event.head_commit.message, 'chore(main): release')"
-  #   timeout-minutes: 10
-  #   steps:
-  #     - name: Checkout code
-  #       uses: actions/checkout@v3
-
-  #     - name: Set up Node.js
-  #       uses: actions/setup-node@v3
-  #       with:
-  #         node-version-file: .nvmrc
-
-  #     - name: Install dependencies
-  #       run: npm ci
-
-  #     - name: Build
-  #       run: npm run build
-
-  #     - name: Run E2E tests
-  #       run: npm run e2e:tests:silent
         
-  #     - name: Release Please
-  #       id: release
-  #       uses: google-github-actions/release-please-action@v4
-  #       with:
-  #         token: ${{ secrets.ACCESS_TOKEN_ACTIONS }}
-  #         release-type: node
+      - name: Release Please
+        id: release
+        uses: google-github-actions/release-please-action@v4
+        with:
+          token: ${{ secrets.ACCESS_TOKEN_ACTIONS }}
+          release-type: node
