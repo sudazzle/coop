@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.9...v1.0.10) (2024-04-16)
+
+
+### Bug Fixes
+
+* try  allow self-signed certificates ([51b9947](https://github.com/sudazzle/coop-api-gateway/commit/51b994755ff74af84ad0c362dd9687358bbfb677))
+
 ## [1.0.9](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.8...v1.0.9) (2024-04-16)
 
 
