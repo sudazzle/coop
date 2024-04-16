@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.7...v1.0.8) (2024-04-16)
+
+
+### Bug Fixes
+
+* cannot convert int64 to string on deploy ([bc123be](https://github.com/sudazzle/coop-api-gateway/commit/bc123be4258a183abe2c3262e9aa121fd5aa58fc))
+
 ## [1.0.7](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.6...v1.0.7) (2024-04-16)
 
 
