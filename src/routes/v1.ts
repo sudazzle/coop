@@ -1,14 +1,8 @@
-import express, { Request, Response } from 'express';
-import axios from 'axios';
-import jsonData from './mock.json';
+import { Router } from 'express';
+import { mockedStoreRouter } from './mocked-store-routes';
+import { storeRoutes } from './store-routes';
 
-export const v1routes = express.Router();
+export const v1routes = Router();
+v1routes.use(mockedStoreRouter);
+v1routes.use(storeRoutes);
 
-v1routes.get('/stores', async (req: Request, res: Response) => {
-  try {
-    const response = await axios.get('https://minside.coop.no/StoreService/SearchStores')
-    res.send(response.data);
-  } catch (error) {
-    res.send(jsonData);
-  }
-});

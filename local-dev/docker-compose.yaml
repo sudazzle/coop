@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  db:
+    image: postgres:latest
+    env_file: ./postgres.dev.env
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports:
+      - '5438:5432'

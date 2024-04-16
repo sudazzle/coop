@@ -3,18 +3,29 @@
   "version": "1.0.6",
   "scripts": {
     "dev": "NODE_ENV=development webpack --mode development --watch",
-    "build": "NODE_ENV=production webpack --mode production"
+    "build": "NODE_ENV=production webpack --mode production",
+    "docker:db:up": "docker-compose -f ./local-dev/docker-compose.yaml up -d",
+    "docker:db:down": "docker-compose -f ./local-dev/docker-compose.yaml down",
+    "e2e:tests:with-debug": "hurl --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt",
+    "e2e:tests:silent": "hurl --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt"
   },
   "author": "shrestha.sudaman@gmail.com",
   "dependencies": {
     "axios": "^1.6.8",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "http-status-codes": "^2.3.0"
+    "http-status-codes": "^2.3.0",
+    "pg": "^8.11.5",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
   },
   "devDependencies": {
+    "@orangeopensource/hurl": "^4.2.0",
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.7",
+    "@types/pg": "^8.11.5",
     "@types/webpack-env": "^1.18.4",
     "clean-webpack-plugin": "^4.0.0",
     "run-script-webpack-plugin": "^0.2.0",

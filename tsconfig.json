@@ -11,6 +11,9 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
     "noImplicitAny": true,
     "types": ["webpack-env"]
   },
