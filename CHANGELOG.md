@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.7](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.6...v1.0.7) (2024-04-16)
+
+
+### Bug Fixes
+
+* add pull always policy ([e3133d7](https://github.com/sudazzle/coop-api-gateway/commit/e3133d731f0c54952a5d64e85b31a03bdc7ddbd9))
+* update read me and fix deployment ([9b84ed2](https://github.com/sudazzle/coop-api-gateway/commit/9b84ed2a450ec51f9ab9b2ffd0627e90a78be1f5))
+
 ## [1.0.6](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.5...v1.0.6) (2024-04-14)
 
 
