@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.10...v1.1.0) (2024-04-17)
+
+
+### Features
+
+* add authenticated routes fix: change port to 8080 ([2a1d157](https://github.com/sudazzle/coop-api-gateway/commit/2a1d15771d6db9ae05e18166a2c1a4da51543d75))
+
 ## [1.0.10](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.9...v1.0.10) (2024-04-16)
 
 
