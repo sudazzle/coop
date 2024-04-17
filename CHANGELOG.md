@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/sudazzle/coop-api-gateway/compare/v1.1.0...v1.1.1) (2024-04-17)
+
+
+### Bug Fixes
+
+* set host to 0.0.0.0 in deployment after .env file was copied in the docker image ([2467a7b](https://github.com/sudazzle/coop-api-gateway/commit/2467a7b6603434a1ddc12017a22e9611642c0f1e))
+
 ## [1.1.0](https://github.com/sudazzle/coop-api-gateway/compare/v1.0.10...v1.1.0) (2024-04-17)
 
 
