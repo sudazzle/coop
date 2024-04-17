@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/sudazzle/coop-api-gateway/compare/v1.1.1...v1.1.2) (2024-04-17)
+
+
+### Bug Fixes
+
+* cors ([1a66542](https://github.com/sudazzle/coop-api-gateway/commit/1a6654297f227267c6ac84d13134b5fa8d16903a))
+* fix lint ([31a0f39](https://github.com/sudazzle/coop-api-gateway/commit/31a0f39489ed13b149c55509c9abb33959ab9484))
+
 ## [1.1.1](https://github.com/sudazzle/coop-api-gateway/compare/v1.1.0...v1.1.1) (2024-04-17)
 
 
