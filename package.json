@@ -7,7 +7,7 @@
     "docker:db:up": "docker-compose -f ./local-dev/docker-compose.yaml up -d",
     "docker:db:down": "docker-compose -f ./local-dev/docker-compose.yaml down",
     "e2e:tests:with-debug": "hurl --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt",
-    "e2e:tests:silent": "hurl --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt",
+    "e2e:tests:silent": "hurl --test --glob e2e-tests/**/*.hurl --variables-file e2e-tests/variables.txt",
     "format:check": "biome check .",
     "format:fix": "biome check --apply .",
     "format:fix:unsafe": "biome check --apply-unsafe ."
@@ -19,8 +19,11 @@
     "class-validator": "^0.14.1",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "express-oauth2-jwt-bearer": "^1.6.0",
     "http-status-codes": "^2.3.0",
     "pg": "^8.11.5",
+    "pino": "^8.20.0",
+    "pino-http": "^9.0.0",
     "reflect-metadata": "^0.2.2",
     "typeorm": "^0.3.20"
   },

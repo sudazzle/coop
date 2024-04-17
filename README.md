@@ -19,7 +19,7 @@ Start development server
 npm run dev
 ```
 
-Server will be listening on [http://localhost:6000](http://localhost:6000) unless you change with env variable.
+Server will be listening on [http://localhost:8080](http://localhost:8080) unless you change with env variable.
 
 ### Formatting
 It uses [Biome](https://biomejs.dev/) for linting and formatting
@@ -40,6 +40,27 @@ Use [hurl](https://hurl.dev/) to perform end to end testing
 ```bash
 npm run e2e:tests:with-debug
 npm run e2e:tests:silent
+```
+
+### Available endpoints
+#### Open
+```bash
+GET /health // for health check
+GET /api/v1/stores // get all stores
+GET /api/v1/stores?page=1&itemsPerPage=100 // paginated pages
+POST /api/v1/stores // create store
+PATCH /api/v1/stores/:id // patch store
+DELETE /api/v1/stores/:id // remove
+```
+
+#### Require authentication
+Its the same endpoints just behind the doors
+```bash
+GET /api/v1/admin/stores // get all stores
+GET /api/v1/admin/stores?page=1&itemsPerPage=100 // paginated pages
+POST /api/v1/admin/stores // create store
+PATCH /api/v1/admin/stores/:id // patch store
+DELETE /api/v1/admin/stores/:id // remove
 ```
 
 ## Stopping Database Server

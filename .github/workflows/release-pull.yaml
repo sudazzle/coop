@@ -51,7 +51,7 @@ jobs:
         run: |
           #!/bin/bash -ex
           while true; do
-            curl -k -q http://localhost:6000/health && exit 0 || sleep 2
+            curl -k -q http://localhost:8080/health && exit 0 || sleep 2
           done
         continue-on-error: true
         timeout-minutes: 1

@@ -53,9 +53,16 @@ jobs:
         run: kubectl apply -f $GITHUB_WORKSPACE/config/deployment.yaml
       
       - name: Redeploy deployment
+        id: redeploy
         # We need this because the image is tagged wth latest and the deployment will not detect a change
         run: kubectl rollout restart deployment/coop-api-gateway
-        
+
+      - name: Fail job if deployment fails
+        if: steps.redeploy.outcome == 'failure'
+        run: |
+          echo "Deployment failed"
+          exit 1
+          
       - name: Rollout status
         run: kubectl rollout status deployment/coop-api-gateway
   

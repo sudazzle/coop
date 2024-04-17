@@ -19,7 +19,7 @@ export const appDataSource = new DataSource({
   database: POSTGRES_DB,
   synchronize: true,
   ssl,
-  logging: true,
+  logging: false,
   entities: [Store],
   migrations: [],
   subscribers: [],

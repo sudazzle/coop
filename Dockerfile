@@ -6,6 +6,8 @@ COPY package.json .
 
 COPY dist/ .
 
+COPY .env .
+
 RUN npm ci --only=prod --force
 
 EXPOSE 80
