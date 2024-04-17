@@ -28,6 +28,8 @@ spec:
         env:
         - name: PORT
           value: "80"
+        - name: HOST
+          value: 0.0.0.0
         - name: POSTGRES_HOST
           value: db-postgresql-nyc3-12163-do-user-6446488-0.c.db.ondigitalocean.com
         - name: POSTGRES_PORT
