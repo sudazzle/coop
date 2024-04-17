@@ -17,6 +17,7 @@
     "axios": "^1.6.8",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-oauth2-jwt-bearer": "^1.6.0",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.0",
     "@orangeopensource/hurl": "^4.2.0",
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.7",
     "@types/pg": "^8.11.5",
